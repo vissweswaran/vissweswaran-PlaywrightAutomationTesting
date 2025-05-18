@@ -1,0 +1,14 @@
+{
+    "default": {
+        "snippetInterface": "async-await",
+        "paths": [
+            "tests/feature/*.feature"
+        ],
+        "require": [
+            "tests/stepdefinition/*.js",
+            "tests/hooks.js"
+        ],
+        "timeout": 5000,
+        "dryRun": false
+    }
+}

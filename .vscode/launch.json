@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Cucumber Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "--inspect-brk"
+      ],
+      "args": [
+        "${workspaceFolder}/node_modules/.bin/cucumber-js.cmd",
+        "--require",
+        "tests/hooks.js",
+        "--require",
+        "tests/stepdefinition/**/*.js",
+        "tests/feature"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
