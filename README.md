@@ -9,11 +9,17 @@ This repository contains an end-to-end automation test framework built using:
 
 📁 Project Structure
 playwright/
+
 ├── tests/
+
 │ ├── feature/ → .feature files (Gherkin syntax)
+
 │ ├── stepdefinition/ → Step definitions for each feature
+
 │ └── hooks.js → Global setup and teardown (browser launch/close)
+
 ├── package.json
+
 └── README.md
 
 🚀 Getting Started
