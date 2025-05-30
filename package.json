@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-     "test": "cucumber-js"
-  },
+  "test": "cucumber-js --format json:reports/json/cucumber_report.json",
+  "report": "node report.js",
+  "test:report": "npm run test && npm run report"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.18"
+    "@types/node": "^22.15.18",
+    "multiple-cucumber-html-reporter": "^3.9.2"
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.3.0"
