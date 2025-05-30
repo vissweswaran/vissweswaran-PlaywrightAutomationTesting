@@ -9,6 +9,7 @@ This repository contains an end-to-end automation test framework built using:
 
 📁 Project Structure
 playwright/
+
 ├── tests/                           # All test-related files
 
 │   ├── feature/                     # .feature files (BDD Gherkin syntax)
