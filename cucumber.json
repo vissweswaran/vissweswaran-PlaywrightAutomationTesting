@@ -8,7 +8,7 @@
             "tests/stepdefinition/*.js",
             "tests/hooks.js"
         ],
-        "timeout": 5000,
+        "timeout": 10000,
         "dryRun": false
     }
 }

@@ -10,7 +10,7 @@
         "--inspect-brk"
       ],
       "args": [
-        "${workspaceFolder}/node_modules/.bin/cucumber-js.cmd",
+        "${workspaceFolder}/node_modules/@cucumber/cucumber/bin/cucumber-js",
         "--require",
         "tests/hooks.js",
         "--require",

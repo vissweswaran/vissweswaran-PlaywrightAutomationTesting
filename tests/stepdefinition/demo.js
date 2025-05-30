@@ -12,7 +12,7 @@ Given('the user is on the login page', async function () {
 
 When('the user enters valid username and password', async function () {
   await this.page.fill('#email', 'validUser');
-  await this.page.fill('#pass', 'validPassword');
+  await this.page.fill('#pass9', 'validPassword');
   await this.page.click('button[name="login"]');
 });
 
