@@ -9,18 +9,19 @@ This repository contains an end-to-end automation test framework built using:
 
 📁 Project Structure
 playwright/
-
 ├── tests/
-
-│ ├── feature/ → .feature files (Gherkin syntax)
-
-│ ├── stepdefinition/ → Step definitions for each feature
-
-│ └── hooks.js → Global setup and teardown (browser launch/close)
-
-├── package.json
-
-└── README.md
+│   ├── feature/              # .feature files (BDD Gherkin syntax)
+│   ├── stepdefinition/       # Step definitions for each feature
+│   └── hooks.js              # Global setup and teardown (browser, context)
+├── reports/                  # ⛔ Ignored in Git (auto-generated test results)
+│   ├── cucumber_report.json  # JSON output after test execution
+│   ├── html/                 # Generated HTML reports
+│   └── screenshots/          # Screenshots on failure (optional)
+├── report.js                 # Script to generate the HTML report
+├── package.json              # NPM config and test scripts
+├── package-lock.json         
+├── cucumber.json             # (Optional) Cucumber config (if created)
+└── README.md                 # Project documentation
 
 🚀 Getting Started
 1. Clone the repo
