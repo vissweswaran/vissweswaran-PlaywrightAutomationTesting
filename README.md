@@ -9,19 +9,34 @@ This repository contains an end-to-end automation test framework built using:
 
 📁 Project Structure
 playwright/
-├── tests/
-│   ├── feature/              # .feature files (BDD Gherkin syntax)
-│   ├── stepdefinition/       # Step definitions for each feature
-│   └── hooks.js              # Global setup and teardown (browser, context)
-├── reports/                  # ⛔ Ignored in Git (auto-generated test results)
-│   ├── cucumber_report.json  # JSON output after test execution
-│   ├── html/                 # Generated HTML reports
-│   └── screenshots/          # Screenshots on failure (optional)
-├── report.js                 # Script to generate the HTML report
-├── package.json              # NPM config and test scripts
-├── package-lock.json         
-├── cucumber.json             # (Optional) Cucumber config (if created)
-└── README.md                 # Project documentation
+├── tests/                           # All test-related files
+
+│   ├── feature/                     # .feature files (BDD Gherkin syntax)
+
+│   ├── stepdefinition/             # Step definitions mapped to each feature
+
+│   └── hooks.js                    # Global setup/teardown (e.g., browser launch/close)
+
+│
+├── reports/                        # ⛔ Auto-generated test results (ignored in Git)
+
+│   ├── cucumber_report.json        # JSON output generated after test execution
+
+│   ├── html/                       # HTML report output (from multiple-cucumber-html-reporter)
+
+│   └── screenshots/                # Failure screenshots (if configured)
+
+│
+├── report.js                       # Script to generate HTML report from JSON
+
+├── cucumber.json                   # (Optional) Cucumber config file for CLI options
+
+├── package.json                    # NPM dependencies and test scripts
+
+├── package-lock.json               # Auto-generated dependency tree lock
+
+└── README.md                       # Project overview and documentation
+
 🚀 Getting Started
 1. Clone the repo
 git clone https://github.com/vissweswaran/vissweswaran-PlaywrightAutomationTesting.git
